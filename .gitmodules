@@ -3,7 +3,7 @@
 	url = https://github.com/tmux-plugins/tpm
 [submodule "plugins/tmux-chameleon"]
 	path = plugins/tmux-chameleon
-	url = git@github.com:toddyamakawa/tmux-chameleon.git
+	url = git@github.com:toddky/tmux-chameleon.git
 [submodule "plugins/tmux-picker"]
 	path = plugins/tmux-picker
 	url = git@github.com:toddyamakawa/tmux-picker.git
