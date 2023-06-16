@@ -3,13 +3,18 @@
 	url = https://github.com/tmux-plugins/tpm
 [submodule "plugins/tmux-chameleon"]
 	path = plugins/tmux-chameleon
+	#url = https://github.com/toddky/tmux-chameleon.git
 	url = git@github.com:toddky/tmux-chameleon.git
 [submodule "plugins/tmux-picker"]
 	path = plugins/tmux-picker
+	#url = https://github.com/toddyamakawa/tmux-picker.git
 	url = git@github.com:toddyamakawa/tmux-picker.git
 [submodule "plugins/tmux-prefixless"]
 	path = plugins/tmux-prefixless
+	#url = https://github.com/toddyamakawa/tmux-prefixless.git
 	url = git@github.com:toddky/tmux-prefixless.git
 [submodule "plugins/tmux-scratchpad"]
 	path = plugins/tmux-scratchpad
+	#url = https://github.com/toddyamakawa/tmux-scratchpad.git
 	url = git@github.com:toddyamakawa/tmux-scratchpad.git
+
