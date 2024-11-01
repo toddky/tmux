@@ -7,10 +7,13 @@ Plugins
 
 ### Plugins I Use
 - [tpm](https://github.com/tmux-plugins/tpm)
+- [tmux-prefixless](https://github.com/toddky/tmux-prefixless)
+  - Keybindings that don't use prefix because I hate using a prefix.
+- [tmux-chameleon](https://github.com/toddky/tmux-chameleon)
+  - Colorscheme written by me.
 - [tmux-picker](https://github.com/toddyamakawa/tmux-picker)
   - I forked the [original tmux-picker](https://github.com/RTBHOUSE/tmux-picker)
   - My modification has `q` to exit and different colors
-- [tmux-scratchpad](https://github.com/toddyamakawa/tmux-scratchpad)
 
 ### Plugins Worth Checking Out
 - [tmux-continuum](https://github.com/tmux-plugins/tmux-continuum)
