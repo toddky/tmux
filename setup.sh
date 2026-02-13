@@ -34,7 +34,19 @@ fi
 
 # Install plugins
 echo "Installing tmux plugins..." 1>&5
+git submodule sync
 git submodule update --init --remote --recursive
+
+# Add SSH remotes named "github" for each submodule
+echo "Adding github (SSH) remotes..." 1>&5
+git submodule foreach '
+	https_url=$(git remote get-url origin)
+	ssh_url=$(echo "$https_url" | sed "s|https://github.com/|git@github.com:|")
+	if [ "$https_url" != "$ssh_url" ]; then
+		git remote set-url --add --push origin "$ssh_url"
+		git remote add github "$ssh_url" 2>/dev/null || git remote set-url github "$ssh_url"
+	fi
+'
 tmux run-shell "$CURRENT_DIR/plugins/tpm/bin/clean_plugins"
 tmux run-shell "$CURRENT_DIR/plugins/tpm/bin/install_plugins"
 tmux run-shell "$CURRENT_DIR/plugins/tpm/bin/update_plugins all"
