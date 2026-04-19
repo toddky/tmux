@@ -3,7 +3,12 @@ set -e
 
 VERSION=3.5a
 
-TMPDIR=$(mktemp -d)
+if [[ "$(tmux -V 2>/dev/null)" == "tmux ${VERSION}" ]]; then
+    echo "tmux ${VERSION} is already installed"
+    exit 0
+fi
+
+TMPDIR="$(mktemp -d)"
 trap 'rm -rf "$TMPDIR"' EXIT
 
 sudo apt install -y build-essential libevent-dev libncurses5-dev bison pkg-config autoconf automake
