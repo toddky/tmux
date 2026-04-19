@@ -47,7 +47,4 @@ git submodule foreach '
 		git remote add github "$ssh_url" 2>/dev/null || git remote set-url github "$ssh_url"
 	fi
 '
-tmux run-shell "$CURRENT_DIR/plugins/tpm/bin/clean_plugins"
-tmux run-shell "$CURRENT_DIR/plugins/tpm/bin/install_plugins"
-tmux run-shell "$CURRENT_DIR/plugins/tpm/bin/update_plugins all"
 
