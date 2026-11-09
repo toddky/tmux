@@ -11,9 +11,6 @@ Plugins
   - Keybindings that don't use prefix because I hate using a prefix.
 - [tmux-chameleon](https://github.com/toddky/tmux-chameleon)
   - Colorscheme written by me.
-- [tmux-picker](https://github.com/toddyamakawa/tmux-picker)
-  - I forked the [original tmux-picker](https://github.com/RTBHOUSE/tmux-picker)
-  - My modification has `q` to exit and different colors
 
 ### Plugins Worth Checking Out
 - [tmux-continuum](https://github.com/tmux-plugins/tmux-continuum)
@@ -24,7 +21,8 @@ Plugins
 
 ### Plugins I didn't find too useful
 - [tmux-man](https://github.com/knakayama/tmux-man)
-  - Replaced with `tmux-scratchpad`
+  - Replaced with the scratchpad in `tmux-prefixless` (`M-O`), which replaced my `tmux-scratchpad`
 - [tmux-fingers](https://github.com/Morantron/tmux-fingers)
-  - Replaced with `tmux-picker`
+  - Replaced with yank in `tmux-prefixless` (`M-y`), which replaced my
+    [tmux-picker](https://github.com/toddyamakawa/tmux-picker) fork
 
